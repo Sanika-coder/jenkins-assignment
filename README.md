@@ -11,7 +11,7 @@ Jenkins Installation on EC2
 
 Install Java and Jenkins: sudo apt update sudo apt install openjdk-17-jdk -y curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null sudo apt update sudo apt install jenkins -y sudo systemctl restart jenkins
 
-Jenkins URL: http://localhost:8080
+
 
 Connecting Jenkins with GitHub Install Git plugin in Jenkins Create a GitHub Personal Access Token (PAT) Add the PAT in Jenkins credentials (Secret Text) In the Jenkins job, set the Git repository URL Use the credential you added
 
